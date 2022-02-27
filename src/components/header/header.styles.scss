@@ -1,0 +1,40 @@
+@import '../sass-assets/vars.scss';
+
+.header {
+  grid-column: 1 / span 8;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  & > nav {
+    grid-column: 2 / span 6;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.links {
+  margin-left: auto;
+
+  & a {
+    font-size: $fs-md;
+    font-weight:$fw-md;
+    transition: $transition;
+    padding: 10px;
+    margin-right: 40px;
+  }
+}
+
+.links a {
+}
+
+.links :hover {
+  color: $dark;
+  background-color: $light2;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: $small) {
+  nav .links {
+    display: none;
+  }
+}

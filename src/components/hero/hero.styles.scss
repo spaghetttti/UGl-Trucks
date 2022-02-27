@@ -1,0 +1,75 @@
+@import '../sass-assets/vars.scss';
+
+.hero {
+  grid-column: 2 / span 4;
+  padding: 60px 0;
+
+  &__font {
+    color: $light;
+    font-family: "Lato", sans-serif;
+    font-weight: $fw-bg;
+    font-size: $fs-xbg;
+  }
+
+  .icons {
+    display: flex;
+    margin-top: 55px;
+
+    .icon {
+      display: flex;
+      align-items: center;
+
+      &__info {
+        margin: 0 80px 0 20px;
+      }
+
+      &__top {
+        font-size: 1.0625rem;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+
+      &__bottom {
+        font-size: $fs-bg;
+        font-weight: $fw-bg;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: $medium) {
+  .icon {
+    
+    & img {
+      height: 55px;
+      width: auto;
+    }
+
+    &__top {
+      font-size: $fs-sm;
+    }
+
+    &__bottom {
+      font-size: $fs-md1;
+    }
+  }
+
+  .hero__font {
+    font-size: $fs-bg1;
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .info {
+    grid-column: 2 / span 6;
+  }
+
+  .icons {
+    flex-direction: column;
+    
+    .icon {
+      margin-bottom: 20px;
+    }
+  }
+}

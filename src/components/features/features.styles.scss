@@ -1,0 +1,66 @@
+@import '../sass-assets/vars.scss';
+
+.features {
+  grid-column: 2 / span 6;
+  background-color: $dark80;
+  padding: 40px 40px 60px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  border-radius: 3px;
+
+  .feature {
+    display: flex;
+    margin: 0 60px 40px 0px;
+    
+    &:nth-child(3) {
+      align-self: flex-start;
+    }
+  
+    & img {
+      height: 100px;
+      margin-right: 20px;
+    }
+  
+    &__info {
+      margin-top: 10px;
+    }
+  
+    &__top,
+    &__cta {
+      font-size: $fs-xsm;
+      font-weight: $fw-bg;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+  
+    &__cta {
+      cursor: pointer;
+      transition: $transition;
+    }
+  
+    &__cta:hover {
+      color: $accent;
+    }
+  
+    &__bottom {
+      width: 180px;
+      font-size: $fs-sm;
+      font-weight: $fw-md;
+    }
+  }
+
+}
+@media only screen and (max-width: $medium) { 
+  .features {
+    grid-column: 1 / span 8;
+  }
+}
+
+@media only screen and (max-width: $small) {
+  .feature {
+    flex-direction: column;
+  }
+}
