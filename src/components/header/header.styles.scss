@@ -1,4 +1,4 @@
-@import '../sass-assets/vars.scss';
+@import "../sass-assets/vars.scss";
 
 .header {
   grid-column: 1 / span 8;
@@ -10,31 +10,76 @@
     display: flex;
     align-items: center;
   }
-}
 
-.links {
-  margin-left: auto;
+  .links {
+    margin-left: auto;
 
-  & a {
-    font-size: $fs-md;
-    font-weight:$fw-md;
-    transition: $transition;
-    padding: 10px;
-    margin-right: 40px;
+    & a {
+      font-size: $fs-md;
+      font-weight: $fw-md;
+      transition: $transition;
+      padding: 10px;
+      margin-right: 40px;
+    }
+  }
+
+  .links :hover {
+    color: $dark;
+    background-color: $light2;
+    border-radius: 3px;
+  }
+
+  &__menu {
+    display: none;
   }
 }
 
-.links a {
+@media only screen and (max-width: $xsmall) {
+  .links :first-child {
+    display: none;
+  }
+  .links :nth-child(2) {
+    display: none;
+  }
 }
 
-.links :hover {
-  color: $dark;
-  background-color: $light2;
-  border-radius: 3px;
+@media only screen and (max-width: $medium) {
+  .logo {
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: $small) {
   nav .links {
     display: none;
+  }
+
+  .header {
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    & > nav {
+      grid-column: 2 / span 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__menu {
+      display: unset;
+      //Mobile menu
+
+      span {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: black;
+
+        &:not(:last-child) {
+          margin-bottom: 3px;
+        }
+      }
+    }
   }
 }

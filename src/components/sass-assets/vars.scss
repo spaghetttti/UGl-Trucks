@@ -8,14 +8,14 @@ $dark60: rgba(48, 70, 89, 0.6);
 $light: #f5f9fc;
 $light2: #f5f9fcb7;
 // transition
-$transition: all 0.3s ease 0s;
+$transition: all 0.3s ease-in-out 0s;
 // font sizes
 $fs-xsm: 0.8125rem;
 $fs-sm: 1rem;
 $fs-md: 1.0625rem;
 $fs-md1: 1.125rem;
 $fs-bg: 1.5625rem;
-$fs-bg1: 2.1875rem;
+$fs-bg1: 3.1875rem;
 $fs-xbg: 4.375rem;
 // font weights and
 $fw-md: 400;
@@ -24,4 +24,5 @@ $fw-bg: 700;
 $big : 1400px;
 $xmedium : 1264px;
 $medium : 1024px;
+$xsmall: 900px;
 $small : 640px;

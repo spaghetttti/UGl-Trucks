@@ -12,21 +12,21 @@ const Hero = () => {
       <h1 className="hero__font">Find your desired truck with us</h1>
       <div className="icons">
         <div className="icon">
-          <Logo2 />
+          <Logo2 className="icon__img"/>
           <div className="icon__info">
             <p className="icon__top">Location</p>
             <p className="icon__bottom">Illinois</p>
           </div>
         </div>
         <div className="icon">
-          <Logo3 />
+          <Logo3 className="icon__img"/>
           <div className="icon__info">
             <p className="icon__top">Customer Service</p>
             <p className="icon__bottom">Outstanding</p>
           </div>
         </div>
         <div className="icon">
-          <Logo4 />
+          <Logo4 className="icon__img"/>
           <div className="icon__info">
             <p className="icon__top">Quality</p>
             <p className="icon__bottom">Exceptional</p>

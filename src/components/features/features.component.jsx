@@ -1,10 +1,8 @@
 import React from "react";
 
-import './features.styles.scss';
+import "./features.styles.scss";
 
-import Logo5 from '../../assets/traveler.jpg';
-import Logo6 from '../../assets/travel-guide.jpg';   
-
+import Logo5 from "../../assets/traveler.jpg";
 
 const Features = () => {
   return (
@@ -14,47 +12,27 @@ const Features = () => {
         <div className="feature__info">
           <p className="feature__top">A lot to choose from</p>
           <p className="feature__bottom">
-            New high-quality guides added each week.
+            New high-quality trucks added each week. Filter out trucks according
+            to your need and wants, in our inventory page and the perfect truck
+            for you for a reasonable price.
           </p>
-          <a className="feature__cta" href="#">
-            Learn More
-          </a>
+          <p className="feature__cta">
+            <a href="/">Learn More</a>
+          </p>
         </div>
       </div>
       <div className="feature">
-        <img src={Logo6} width="100%" alt="" />
         <div className="feature__info">
-          <p className="feature__top">Vetted local experts</p>
+          <p className="feature__top">About our company</p>
           <p className="feature__bottom">
-            The largest network of local guides worldwide.
+            Commercial truck solutions for any budget and business. We are
+            dedicated truck dealership based in Montgomery IL. Our highly
+            professional team and fleet managers give you best sugesstions to
+            your choice.
           </p>
-          <a className="feature__cta" href="#">
-            Learn More
-          </a>
-        </div>
-      </div>
-      <div className="feature">
-        <img src={Logo5} width="100%" alt="" />
-        <div className="feature__info">
-          <p className="feature__top">Vetted local experts</p>
-          <p className="feature__bottom">
-            The largest network of local guides worldwide.
+          <p className="feature__cta">
+            <a href="/">Learn More</a>
           </p>
-          <a className="feature__cta" href="#">
-            Learn More
-          </a>
-        </div>
-      </div>
-      <div className="feature">
-        <img src={Logo6} width="100%" alt="" />
-        <div className="feature__info">
-          <p className="feature__top">Vetted local experts</p>
-          <p className="feature__bottom">
-            The largest network of local guides worldwide.
-          </p>
-          <a className="feature__cta" href="#">
-            Learn More
-          </a>
         </div>
       </div>
     </section>
