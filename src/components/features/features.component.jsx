@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./features.styles.scss";
+import GoogleMap from "../google-map/google-map.component";
 
 import Logo5 from "../../assets/traveler.jpg";
 
@@ -34,7 +35,18 @@ const Features = () => {
             <a href="/">Learn More</a>
           </p>
         </div>
+      </div><div className="feature1">
+        <div className="feature__info">
+          <p className="feature__top">Find us</p>
+          <p className="feature__bottom">
+            <GoogleMap/>
+          </p>
+          <p className="feature__cta">
+            <a href="/">Learn More</a>
+          </p>
+        </div>
       </div>
+      
     </section>
   );
 };

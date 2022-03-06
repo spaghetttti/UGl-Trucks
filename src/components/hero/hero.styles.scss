@@ -62,15 +62,11 @@
 @media only screen and (max-width: $xsmall) {
   .hero {
     padding: 20px 0;
-    grid-column: 2 / span 11;
+    grid-column: 2 / span 10;
     
   }
   .hero__font {
     font-size: 2.9rem;
-  }
-
-  .info {
-    grid-column: 2 / span 11;
   }
 
   .icons {

@@ -8,6 +8,7 @@ $bar-spacing: 10px;
   width: $bar-width;
   height: $bar-height + $bar-spacing * 2;
   cursor: pointer;
+  
 }
 
 .hamburger-menu,
@@ -75,23 +76,23 @@ $bar-spacing: 10px;
 }
 
 .header-list {
-  background-color: white;
-  padding: 1.625rem;
+  background-color: #f5f9fc;;  
   border-radius: 5px;
   position: absolute;
-  width: calc(100% - 3rem);
+  width: calc(100% - 55px);
   left: 50%;
-  margin-top: 1.5rem;
+  margin-top: 120px;
   transform: translateX(-50%);
 
   a,
   a:hover {
     text-decoration: none;
-    color: black;
-    text-shadow: 2px 2px 7px #00000082;
-    padding: 0.625rem;
+    color: #2f4354;//#2f4354
+    padding: 0.825rem;
     display: block;
     text-align: center;
+    font-weight: $fw-bg;
+    font-size: $fs-md1;
   }
 }
 
@@ -102,4 +103,24 @@ $bar-spacing: 10px;
 
 .has-fade {
   visibility: hidden;
+}
+
+.fade-in {
+  animation: fade-in 350ms ease-in-out forwards;
+  visibility: visible;
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
 }

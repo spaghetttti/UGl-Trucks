@@ -18,10 +18,10 @@ class Header extends React.Component {
   render() {
     let boxClass = ["hamburger-menu"];
     let overLayBoxClass = [""];
-    let menuListClass = ["header-list has-fade"];
+    let menuListClass = ["header-list container has-fade"];
     if (this.state.addClass) {
       boxClass.push("animate");
-      overLayBoxClass.push("overlay");
+      //* overLayBoxClass.push("overlay");
       overLayBoxClass.push("fade-in");
       menuListClass.push("fade-in");
     } else {
@@ -30,7 +30,7 @@ class Header extends React.Component {
 
     return (
       <div className="header">
-        <div className={overLayBoxClass.join("")}></div>
+        <div className={overLayBoxClass.join(" ")}></div>
         <nav>
           <a href="/">
             <Logo1 className="logo" />
