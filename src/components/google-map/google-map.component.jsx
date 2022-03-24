@@ -8,7 +8,7 @@ const location = {
   address: "Oswego Township, IL, USA",
   lat: 41.6890,
   lng: 88.3434,
-  zoomLevel: 17,
+  zoomLevel: 7,
 };
 
 const GoogleMap = () => (

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
+
+@import './components/sass-assets/vars.scss';
+
+:root {
+  --accent: #304659;
+  --accentHover: #304659;
+  --dark: #304659;
+  --dark80: rgba(48, 70, 89, 0.8);
+  --dark60: rgba(48, 70, 89, 0.6);
+  --light: #f5f9fc;
+  --light2: #f5f9fcb7;
+  --transition: all 0.3s ease 0s;
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  max-height: 100%;
+  overflow: auto;
+  background: linear-gradient($dark60, $dark60),
+    url(./assets/Volvo.jpg);
+  
+  background-position: 33% 33%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+p,
+a{
+  font-family: 'Smooch Sans', sans-serif;
+  color: $light;
+  font-size: large;
+  text-decoration: none;
+}
+
+a,
+.logo {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: $small) {
+
+    .App {
+        background-position: 56% 39%;
+    }
+  }

@@ -2,8 +2,9 @@ import React from "react";
 
 import "./features.styles.scss";
 import GoogleMap from "../google-map/google-map.component";
-
-import Logo5 from "../../assets/traveler.jpg";
+import ContactForm from "../contact-form/contact-form.component";
+//import Logo5 from "../../assets/traveler.jpg";
+import Logo5 from '../../assets/Trucksunsplash.jpg';
 
 const Features = () => {
   return (
@@ -14,7 +15,7 @@ const Features = () => {
           <p className="feature__top">A lot to choose from</p>
           <p className="feature__bottom">
             New high-quality trucks added each week. Filter out trucks according
-            to your need and wants, in our inventory page and the perfect truck
+            to your need and wants, in our inventory page and find the perfect truck
             for you for a reasonable price.
           </p>
           <p className="feature__cta">
@@ -35,18 +36,16 @@ const Features = () => {
             <a href="/">Learn More</a>
           </p>
         </div>
-      </div><div className="feature1">
-        <div className="feature__info">
-          <p className="feature__top">Find us</p>
-          <p className="feature__bottom">
-            <GoogleMap/>
-          </p>
-          <p className="feature__cta">
-            <a href="/">Learn More</a>
-          </p>
+      </div>
+      <div className="contact"> 
+        <div className="contact__opt">
+        <p className="feature__top">Contact us</p>
+          <GoogleMap />
+        </div>
+        <div className="contact__opt">
+          <ContactForm />
         </div>
       </div>
-      
     </section>
   );
 };
