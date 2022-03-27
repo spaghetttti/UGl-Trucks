@@ -36,9 +36,9 @@ class Header extends React.Component {
             <Logo1 className="logo" />
           </a>
           <div className="links">
-            <a href="/">About</a>
+            <a href="/about">About</a>
             <a href="/">Docs</a>
-            <a href="/">Inventory</a>
+            <a href="/inventory">Inventory</a>
           </div>
 
           <div className="header__menu menu-wrapper">

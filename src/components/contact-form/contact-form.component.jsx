@@ -5,7 +5,7 @@ import "./contact-form.styles.scss";
 class ContactForm extends React.Component {
   render() {
     return (
-      <form>
+      <form className="contact-form"> 
         <input
           name="name"
           type="text"

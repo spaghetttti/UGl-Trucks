@@ -9,7 +9,7 @@ import { ReactComponent as Logo4 } from "../../assets/Icon3.svg";
 const Hero = () => {
   return (
     <section className="hero">
-      <h1 className="hero__font">Find your desired truck with us</h1>
+      <h1 className="hero__font">Find your desired truck <br /> with us</h1>
       <div className="icons">
         <div className="icon">
           <Logo2 className="icon__img"/>
@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="icon">
           <Logo3 className="icon__img"/>
           <div className="icon__info">
-            <p className="icon__top">Customer Service</p>
+            <p className="icon__top">Service</p>
             <p className="icon__bottom">Outstanding</p>
           </div>
         </div>
