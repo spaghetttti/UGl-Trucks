@@ -51,9 +51,9 @@ class Header extends React.Component {
         </nav>
         <div className={menuListClass.join(" ")}>
           <a href="/">Home</a>
-          <a href="/">About</a>
+          <a href="/about">About</a>
           <a href="/">Docs</a>
-          <a href="/">Inventory</a>
+          <a href="/inventory">Inventory</a>
         </div>
       </div>
     );

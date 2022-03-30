@@ -12,6 +12,7 @@
   grid-template-rows: 120px 1fr;
 
   &__grid {
+    
     grid-column: 2 / span 6;
     background-color: $dark80;
     padding: 30px 30px 50px 30px;
@@ -23,8 +24,8 @@
     justify-content: space-between;
 
     .filter {
-      width: 230px;
-      padding: 10px;
+      width: 28%;
+      padding: 10px;  
       & h3 {
         font-size: $fs-bg;
         font-weight: $fw-bg;
@@ -50,7 +51,7 @@
           }
 
           input {
-            font-size: $fs-xsm;
+            font-size: $fs-md;
             font-weight: $fw-md;
           }
          
@@ -110,7 +111,7 @@
           padding: 5px 0 3px 0;
           gap: 5px;
           &__button {
-            font-size: $fs-xsm;
+            font-size: $fs-sm;
             
           }
         }
@@ -119,8 +120,8 @@
 
       .filtering {
         &__button {
-          font-size: $fs-xsm;
           margin: 4px 0;
+          font-size: $fs-sm;
           &:focus {
             background:white; color: $button-dark;
           }
@@ -129,8 +130,22 @@
     }
       
       .display {
-        display: flex;
-      flex-direction: row;
+        width: 68%;
     }
+  }
+}
+
+
+@media only screen and (max-width: $medium) {
+  .filter {
+    display: none;
+  }
+
+  .display {
+    width: 100% !important;
+  }
+
+  .inventory__grid {
+    grid-column: 1 / span 12;
   }
 }

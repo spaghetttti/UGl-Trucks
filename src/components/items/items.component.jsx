@@ -6,7 +6,7 @@ import './items.styles.scss';
 
 const Items = () => {
     return(
-        <div className="item">
+        <div className="items">
            {mockTrucks.map(({id, ...otherMockProps}) => <Item key={id} { ...otherMockProps}/>)}
         </div>
     )

@@ -1,5 +1,7 @@
 @import '../sass-assets/vars.scss';
 
 .items {
-    color: red;
+    display: flex;
+      flex-direction: column;
+      gap: 25px;
 }

@@ -1,10 +1,15 @@
+import Truck1 from './Truck1.png';
+import Truck2 from './Truck2.png';
+import Truck3 from './Truck3.png';
+
 const mockTrucks = [ 
  
     {id:1, 
+      imgId : 1,
    
       name: "Volvo Truck", 
    
-      img: "", 
+      img: Truck1, 
    
       description :  { 
    
@@ -27,10 +32,11 @@ const mockTrucks = [
       }, 
    
       {id:2, 
+        imgId : 2,
    
       name: "Cascadia Truck", 
    
-      img: "", 
+      img: Truck2, 
    
       description :  { 
    
@@ -53,10 +59,10 @@ const mockTrucks = [
       }, 
    
       {id:3, 
-   
+        imgId : 3,
       name: "Freightliner Truck", 
    
-      img: "", 
+      img: Truck3, 
    
       description : { 
    

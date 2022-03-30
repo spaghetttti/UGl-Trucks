@@ -7,6 +7,8 @@ const InventoryPage = () => {
   return (
     <div className="inventory">
       <Header />
+      <main>
+
       <div className="inventory__grid">
         <div className="filter">
           <div className="quick_search">
@@ -34,8 +36,8 @@ const InventoryPage = () => {
             </div>
             <h5>By milage</h5> 
             <div className="sorting__buttons">
-             <input className="sorting__buttons__button" type="submit" value="High millage first" />
-             <input className="sorting__buttons__button" type="submit" value="Low millage first" />
+             <input className="sorting__buttons__button" type="submit" value="High first" />
+             <input className="sorting__buttons__button" type="submit" value="Low first" />
             </div>
           </div>
           <div className="filtering">
@@ -52,6 +54,7 @@ const InventoryPage = () => {
           <Items/>
         </div>
       </div>  
+      </main>
     </div>
   );
 };

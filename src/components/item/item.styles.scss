@@ -1,5 +1,55 @@
 @import '../sass-assets/vars.scss';
 
 .item {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 
+    .desc {
+        display: flex;
+        flex-direction: column;
+        &>h3 {
+            font-size: $fs-ng;
+        }
+        font-size: $fs-sm;
+        
+        &__contact {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: $fs-md;
+            font-weight: $fw-md;
+            &>a {
+            cursor: pointer;
+            transition: $transition;
+            padding: 10px;
+              
+            &:hover {
+                color: $dark;
+                background-color: $light2;
+                border-radius: 3px;
+            }
+          }
+        }
+    }
+
+    .img {
+
+        &>img {
+            width: 95%;
+        }
+    }
+}
+
+span {
+    color: #ffed53;
+    font-size: $fs-md1;
+}
+
+@media only screen and (max-width: $medium) {
+    .item {
+        flex-direction: column;
+    }
 }

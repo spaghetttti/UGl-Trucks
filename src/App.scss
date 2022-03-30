@@ -27,8 +27,7 @@
   overflow: auto;
   background: linear-gradient($dark60, $dark60),
     url(./assets/Volvo.jpg);
-  background: cover;
-  
+ 
   background-position: 33% 33%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -43,6 +42,10 @@ a,h1,h2,h3,h5{
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+  
 input {
   font-family: 'Smooch Sans', sans-serif;
   font-size: $fs-md; //! problemoooooo
