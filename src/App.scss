@@ -13,12 +13,20 @@
   --transition: all 0.3s ease 0s;
 }
 
-
+//* box sizings 
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+//* fonts 
+* {
+  font-family: 'Smooch Sans', sans-serif;
+  color: $light;
+  letter-spacing: 1.2px;
+  text-decoration: none;
 }
 
 .App {
@@ -34,21 +42,14 @@
   background-size: auto;
 }
 
-p,
-a,h1,h2,h3,h5{
-  font-family: 'Smooch Sans', sans-serif;
-  color: $light;
-  letter-spacing: 1.2px;
-  text-decoration: none;
-}
+
 
 ul {
   list-style-type: none;
 }
   
 input {
-  font-family: 'Smooch Sans', sans-serif;
-  font-size: $fs-md; //! problemoooooo
+  font-size: $fs-md; 
 }
 
 a,
