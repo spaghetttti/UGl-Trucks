@@ -1,0 +1,108 @@
+@import "../../components/sass-assets/vars.scss";
+
+.inventory {
+  min-height: 100vh;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(1fr, 190px)) minmax(
+      60px,
+      1fr
+    );
+  grid-template-rows: 120px 1fr;
+
+  &__grid {
+    grid-column: 2 / span 6;
+    background-color: $dark80;
+    padding: 30px 30px 50px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: start;
+    border-radius: 3px;
+    justify-content: space-between;
+
+    .display {
+      width: 68%;
+    }
+  }
+
+  .filter__menu {
+    display: none;
+    background-color: $dark80;
+    padding: 5px 12px;
+    position: fixed;
+    top: 93%;
+    height: 7%;
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &__item {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  
+    &:target {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  
+  .popup {
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    transition: all 5s ease-in-out;
+  
+    h2 {
+      margin-top: 0;
+    }
+    
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+      
+      &:hover {
+        color: #06D85F;
+      }
+    }
+    
+    .content {
+      max-height: 30%;
+      overflow: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .display {
+    width: 100% !important;
+  }
+
+  .inventory__grid {
+    grid-column: 1 / span 12;
+  }
+
+  .filter__menu {
+    display: flex !important;
+  }
+}

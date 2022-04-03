@@ -1,4 +1,4 @@
-@import '../sass-assets/vars.scss';
+@import "../sass-assets/vars.scss";
 
 .hero {
   grid-column: 2 / span 4;
@@ -6,7 +6,7 @@
 
   &__font {
     color: $light;
-    font-family: "Lato", sans-serif;
+    font-family: 'Smooch Sans', sans-serif; 
     font-weight: $fw-bg;
     font-size: $fs-xbg;
   }
@@ -14,6 +14,7 @@
   .icons {
     display: flex;
     margin-top: 55px;
+    
 
     .icon {
       display: flex;
@@ -24,8 +25,8 @@
       }
 
       &__top {
-        font-size: 1.0625rem;
-        font-weight: 400;
+        font-size: $fs-md;
+        font-weight: $fw-md;
         margin-bottom: 5px;
       }
 
@@ -37,12 +38,10 @@
   }
 }
 
-
 @media only screen and (max-width: $medium) {
   .icon {
-    
-    & img {
-      height: 55px;
+    &__img {
+      height: 60px;
       width: auto;
     }
 
@@ -60,14 +59,20 @@
   }
 }
 
-@media only screen and (max-width: $medium) {
-  .info {
-    grid-column: 2 / span 6;
+@media only screen and (max-width: $xsmall) {
+  .hero {
+    padding: 20px 0;
+    grid-column: 2 / span 10;
+    
+  }
+  .hero__font {
+    font-size: 2.9rem;
   }
 
   .icons {
     flex-direction: column;
-    
+    flex-wrap: wrap;
+
     .icon {
       margin-bottom: 20px;
     }

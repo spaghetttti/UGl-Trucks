@@ -1,0 +1,7 @@
+@import '../sass-assets/vars.scss';
+
+.items {
+    display: flex;
+      flex-direction: column;
+      gap: 25px;
+}
