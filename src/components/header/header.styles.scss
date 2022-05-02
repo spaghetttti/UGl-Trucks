@@ -9,6 +9,9 @@
     grid-column: 2 / span 6;
     display: flex;
     align-items: center;
+    & > a {
+      margin-top: 9px;
+    }
   }
 
   .links {

@@ -1,0 +1,31 @@
+@import "../sass-assets/vars.scss";
+
+.filter-bar-mob {
+  h3 {
+    font-size: $fs-bg;
+    color: $dark;
+  }
+
+  h5 {
+    font-size: $fs-md;
+    color: $dark;
+  }
+
+  .sorting {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+
+  .filtering {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}

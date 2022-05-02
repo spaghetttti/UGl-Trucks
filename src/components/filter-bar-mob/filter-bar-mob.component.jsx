@@ -1,11 +1,9 @@
 import React from "react";
-import QuickSearch from '../quick-search/quick-search.component';
-import "./filter-bar.styles.scss";
+import './filter-bar-mob.styles.scss';
 
-const FilterBar = () => {
+const FilterBarForMob = () => {
   return (
-    <div className="filter-bar">
-      <QuickSearch/>
+    <div className="filter-bar-mob">
       <div className="sorting">
         <h3>Sort</h3>
         <h5>By price</h5>
@@ -48,4 +46,4 @@ const FilterBar = () => {
   );
 };
 
-export default FilterBar;
+export default FilterBarForMob;

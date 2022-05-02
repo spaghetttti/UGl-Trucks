@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Logo1 } from "../../assets/ugl-ruck-sales.svg";
+import { ReactComponent as Logo1 } from "../../assets/UGL-logo.svg";
 
 import "./header.styles.scss";
 import './menu.scss';

@@ -1,0 +1,69 @@
+@import '../sass-assets/vars.scss';
+
+.quick_search {
+    
+    &__input {
+      form {
+        position: relative;
+      }
+      input, button {
+        height: 2rem;
+        border: 1px solid $light;
+        background-color: transparent;
+        color: $light;
+      }
+
+      input {
+        font-size: $fs-md;
+        font-weight: $fw-md;
+      }
+     
+      button {
+        &>p {
+          color: $dark;
+          margin-top: -12px;
+        }  
+      }
+      
+      
+      input[type="search"] {
+        // <-- shold probably remove this for better accessibility, adding for demo aesthetics for now.
+        width: 100%;
+        //background: #fff;//! try with out this shit decide which is better
+        padding: 0 1.6rem;
+        // border-radius: 0.7rem;
+        appearance: none; //for iOS input[type="search"] roundedness issue. border-radius alone doesn't work
+        transition: all 0.3s cubic-bezier(0, 0, 0.43, 1.49);
+        transition-property: width, border-radius;
+        z-index: 1;
+        position: relative;
+      }
+      button {
+        display: none; // prevent being able to tab to it
+        position: absolute;
+        top: 4px;
+        right: 0;
+        width: 3rem;
+        background: #fff;
+        border-radius: 0 3px 3px 0;
+      }
+      input:not(:placeholder-shown) {
+        border-radius: 3px 0 0 3px;
+        
+        width: calc(100% - 3rem);
+        + button {
+          display: block;
+        }
+      }
+      label {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0;
+        border: 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        
+      }
+    }
+  }

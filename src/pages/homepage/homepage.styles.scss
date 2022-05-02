@@ -9,6 +9,12 @@
       1fr
     );
   grid-template-rows: 120px 1fr;
+  background: linear-gradient(rgba(48, 70, 89, 0.6), rgba(48, 70, 89, 0.6)),
+     url(../../assets/Volvo.jpg);
+     background-position: 33% 33%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 main {
@@ -32,3 +38,11 @@ main {
     grid-template-columns: repeat(12, 1fr);
   }
 }
+
+
+@media only screen and (min-width: 1820px) {
+  .homepage__ {
+   background: linear-gradient(#41576a, #41576a), url(../../assets/Volvo.jpg);
+  }
+ }
+ 

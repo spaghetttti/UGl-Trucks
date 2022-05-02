@@ -1,38 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../components/header/header.component";
 import FilterBar from "../../components/filter-bar/filter-bar.component";
 import Items from "../../components/items/items.component";
+import FilterBarForMob from '../../components/filter-bar-mob/filter-bar-mob.component';
 import "./inventory.styles.scss";
+import "./pop-up.styles.scss";
 
 const InventoryPage = () => {
+  const [classPop, setClassPop] = useState('pop-up');
+
+
+  const addClass = () => {
+    classPop.includes('open') ? setClassPop('pop-up') : setClassPop('pop-up open')
+  }
+
+  const removeClass = () => {
+    setClassPop('pop-up')
+  }
+
   return (
     <div className="inventory">
       <Header />
       <main>
         <div className="inventory__grid">
-          <FilterBar />
+          <FilterBar className="FilterBar"/>
           <div className="display">
             <Items />
           </div>
         </div>
-        {/* //! all the html below is for pop up filter in mob view, however it is not working properly */}
-        {/* <div className="filter__menu">
-          <a className="filter__menu__item" type="submit" href="#popup1">
-            Tools
-          </a>
+        <div className="filter__menu" onClick={() => addClass()}>
+          <p className="filter__menu__item" type="submit" >
+            Sort & Filter
+          </p>
         </div>
-        <div id="popup1" class="popup-overlay">
-          <div class="popup">
-            <h2>Here i am</h2>
-            <a class="close" href="#">
-              &times;
-            </a>
-            <div class="content">
-              Thank to pop me out of that button, but now i'm done so you can
-              close this window.
+        <div className={classPop}>
+          {console.log(classPop)}
+          <div className="content">
+            <div className="container">
+
+              <span className="close" onClick={() => removeClass()}>close</span>
+              <FilterBarForMob /> 
             </div>
           </div>
-        </div> */}
+        </div>
       </main>
     </div>
   );

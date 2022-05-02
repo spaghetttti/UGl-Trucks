@@ -12,7 +12,7 @@ const Item = ({name, img, description, price, contactNumber, imgId}) => {
             <div className="desc__info">
                  <ul >
                      <li><b>Engine:</b> {description.engine}</li>
-                     <li><b>House Power:</b> {description.power}</li>
+                     <li><b>Horse Power:</b> {description.power}</li>
                      <li><b>Color:</b> {description.color}</li>
                      <li><b>Condition:</b> {description.condition}</li>
                      <li><b>Milage:</b> {description.milage}</li>
