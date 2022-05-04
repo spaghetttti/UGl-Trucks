@@ -30,7 +30,7 @@ const InventoryPage = () => {
         </div>
         <div className="filter__menu" onClick={() => addClass()}>
           <p className="filter__menu__item" type="submit" >
-            Sort & Filter
+            Filter
           </p>
         </div>
         <div className={classPop}>
@@ -38,7 +38,7 @@ const InventoryPage = () => {
           <div className="content">
             <div className="container">
 
-              <span className="close" onClick={() => removeClass()}>close</span>
+              <span className="close" onClick={() => removeClass()}>Close</span>
               <FilterBarForMob /> 
             </div>
           </div>

@@ -42,5 +42,6 @@ textarea {
   transition: all 0.3s;
   margin-top:-4px;
   font-weight:700;
+  text-align: center;
 }
 [type="submit"]:hover { background:white; color: $button-dark; }

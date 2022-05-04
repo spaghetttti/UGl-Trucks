@@ -157,7 +157,7 @@ body {
 .pop-up {
   position: absolute;
   overflow: hidden;
-  top: 50%;
+  top: 48%;
   left: 50%;
   @include transform(translate(-50%, -50%) scale(0.9));
   overflow-y: auto;
@@ -179,7 +179,6 @@ body {
 
   .content {
     overflow: hidden;
-    text-align: center;
     position: relative;
 
     @media (min-width: 768px) {
@@ -187,7 +186,7 @@ body {
     }
 
     .container {
-      padding: 50px 20px 140px;
+      padding: 60px 20px 20px;
 
       @media (min-width: 568px) {
         padding: 50px 20px 80px;
@@ -203,9 +202,9 @@ body {
     .close {
       position: absolute;
       top: 20px;
-      left: 20px;
+      right: 25px;
       font-size: $fs-md1;
-      font-weight: $fw-md;
+      font-weight: $fw-bg;
       color: $dark;
       @include transition(all 0.4s);
     }
@@ -287,6 +286,7 @@ body {
   &.open {
     visibility: visible;
     opacity: 1;
+    position: fixed;
     @include transform(translate(-50%, -50%) scale(1));
 
     img {

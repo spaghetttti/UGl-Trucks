@@ -23,7 +23,7 @@ class ContactForm extends React.Component {
           className="feedback-input"
           placeholder="Comment"
         ></textarea>
-        <input type="submit" value="SUBMIT" />
+        <p type="submit" value="" >SUBMIT</p>
       </form>
     );
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import searchLogo from '../../assets/icons8-search.svg';
 import './quick-search.styles.scss';
 
 const QuickSearch  = () => {
@@ -12,10 +13,9 @@ const QuickSearch  = () => {
           id="search"
           type="search"
           placeholder="enter keywords"
-         
         />
         <button type="submit">
-          <p>&#x1F50E;&#xFE0E;</p>
+          <p className='search-logo'  ><img src={searchLogo} alt=''/></p>
         </button>
       </form>
     </div>

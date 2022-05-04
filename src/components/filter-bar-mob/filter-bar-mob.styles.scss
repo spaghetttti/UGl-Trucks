@@ -20,6 +20,9 @@
       display: flex;
       flex-direction: column;
       gap: 5px;
+      // &__button {
+      //   text-align: center;
+      // }
     }
   }
 
@@ -27,5 +30,8 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    // &__button {
+    //   text-align: center;
+    // }
   }
 }
