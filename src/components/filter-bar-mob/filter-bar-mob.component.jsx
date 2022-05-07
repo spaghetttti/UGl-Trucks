@@ -1,11 +1,11 @@
 import React from "react";
 import QuickSearch from "../quick-search/quick-search.component";
-import './filter-bar-mob.styles.scss';
+import "./filter-bar-mob.styles.scss";
 
-const FilterBarForMob = () => {
+const FilterBarForMob = ({ setCost, setFilter, setCondition, setSearch }) => {
   return (
     <div className="filter-bar-mob">
-       <QuickSearch/>
+      <QuickSearch setSearch={setSearch} />
       <div className="sorting">
         <h3>Sort</h3>
         <h5>By price</h5>
@@ -13,37 +13,100 @@ const FilterBarForMob = () => {
           <p
             className="sorting__buttons__button"
             type="submit"
-            value="High cost first"
-            onClick={() => console.log('p click is working!')}
-          >High cost first</p>
+            onClick={() => {
+              setCondition(0);
+              setFilter(0);
+              setCost(1);
+            }}
+          >
+            High cost first
+          </p>
           <p
             className="sorting__buttons__button"
             type="submit"
-            value=""
-          >Low cost first</p>
+            onClick={() => {
+              setCondition(0);
+              setFilter(0);
+              setCost(2);
+            }}
+          >
+            Low cost first
+          </p>
         </div>
         <h5>By milage</h5>
         <div className="sorting__buttons">
           <p
             className="sorting__buttons__button"
             type="submit"
-            value=""
-          >High first</p>
+            onClick={() => {
+              setCondition(0);
+              setFilter(0);
+              setCost(3);
+            }}
+          >
+            High first
+          </p>
           <p
             className="sorting__buttons__button"
             type="submit"
-            value=""
-          >Low first</p>
+            onClick={() => {
+              setCondition(0);
+              setFilter(0);
+              setCost(4);
+            }}
+          >
+            Low first
+          </p>
         </div>
       </div>
       <div className="filtering">
         <h3>Filter</h3>
         <h5>Manufacturer</h5>
-        <p className="filtering__button" type="submit" value="" >Volvo</p>
-        <p className="filtering__button" type="submit" value="" >Kenworth</p>
-        <p className="filtering__button" type="submit" value="" >Peterbilt</p>
+        <p
+          className="filtering__button"
+          type="submit"
+          onClick={() => {
+            setCondition(0);
+            setCost(0);
+            setFilter("Volvo");
+          }}
+        >
+          Volvo
+        </p>
+        <p
+          className="filtering__button"
+          type="submit"
+          onClick={() => {
+            setCondition(0);
+            setCost(0);
+            setFilter("Kenworth");
+          }}
+        >
+          Kenworth
+        </p>
+        <p
+          className="filtering__button"
+          type="submit"
+          onClick={() => {
+            setCondition(0);
+            setCost(0);
+            setFilter("Peterbilt");
+          }}
+        >
+          Peterbilt
+        </p>
         <h5>Condition</h5>
-        <p className="filtering__button" type="submit" value="" >Used</p>
+        <p
+          className="filtering__button"
+          type="submit"
+          onClick={() => {
+            setCost(0);
+            setFilter(0);
+            setCondition(1);
+          }}
+        >
+          Used
+        </p>
       </div>
     </div>
   );

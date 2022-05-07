@@ -1,7 +1,7 @@
 import React from 'react';
 import './item.styles.scss';
 
-const Item = ({name, img, description, price, contactNumber, imgId}) => {
+const Item = ({name, img, description, price, contactNumber, imgId, cost}) => {
     return (
         <div className="item">
             <div className="img">
@@ -9,6 +9,7 @@ const Item = ({name, img, description, price, contactNumber, imgId}) => {
             </div>
             <div className="desc">
             <h3>{name}</h3>
+            <h2><i>{cost}</i></h2>
             <div className="desc__info">
                  <ul >
                      <li><b>Engine:</b> {description.engine}</li>

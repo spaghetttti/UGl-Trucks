@@ -1,49 +1,50 @@
 @import "../../components/sass-assets/vars.scss";
 
-
 .filter-bar {
-    width: 28%;
-    padding: 10px;  
-    & h3 {
-      font-size: $fs-bg;
-      font-weight: $fw-bg;
-      padding: 4px 0;
-    }
+  width: 28%;
+  padding: 10px;
+  & h3 {
+    font-size: $fs-bg;
+    font-weight: $fw-bg;
+    padding: 4px 0;
+  }
 
-    & h5 {
-      font-size: $fs-sm;
-      font-weight: $fw-md;
-      padding-bottom: 5px;
-    }
-   
-    
+  & h5 {
+    font-size: $fs-sm;
+    font-weight: $fw-md;
+    padding-bottom: 5px;
+  }
 
-    .sorting {
-      &__buttons {
-        display: flex;
-        padding: 5px 0 3px 0;
-        gap: 5px;
-        &__button {
-          font-size: $fs-sm;
-          
-        }
-      }
-      
-    }
-
-    .filtering {
+  .sorting {
+    &__buttons {
+      display: flex;
+      padding: 5px 0 3px 0;
+      gap: 5px;
       &__button {
-        margin: 4px 0;
         font-size: $fs-sm;
-        &:focus {
-          background:white; color: $button-dark;
-        }
+        
+      }
+      .active {
+        background-color: white;
+        color: $dark;
       }
     }
+  }
+
+  .filtering {
+    &__button {
+      margin: 4px 0;
+      font-size: $fs-sm;
+      &:focus {
+        background: white;
+        color: $button-dark;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: $medium) {
-    .filter-bar {
-      display: none;
-    } 
+  .filter-bar {
+    display: none;
+  }
 }
