@@ -9,10 +9,10 @@ import "./pop-up.styles.scss";
 const InventoryPage = () => {
   const [classPop, setClassPop] = useState("pop-up");
   const [cost, setCost] = useState(0);
-  const [filter, setFilter] = useState(0);
+  const [filter, setFilter] = useState("");
   const [condition, setCondition] = useState(0);
   const [search, setSearch] = useState("");
-  console.log(condition);
+  
   const addClass = () => {
     classPop.includes("open")
       ? setClassPop("pop-up")
@@ -68,6 +68,9 @@ const InventoryPage = () => {
                 setFilter={setFilter}
                 setCondition={setCondition}
                 setSearch={setSearch}
+                cost={cost}
+                filter={filter}
+                condition={condition}
               />
             </div>
           </div>

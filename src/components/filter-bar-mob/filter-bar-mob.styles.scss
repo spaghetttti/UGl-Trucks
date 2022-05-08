@@ -1,6 +1,10 @@
 @import "../sass-assets/vars.scss";
 
 .filter-bar-mob {
+  .active {
+    background-color: white;
+    color: $dark;
+  }
   h3 {
     font-size: $fs-bg;
     color: $dark;

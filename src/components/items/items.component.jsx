@@ -35,7 +35,6 @@ const Items = ({ cost, filter, condition, search }) => {
   let usedTrucks;
   if (condition) {
     usedTrucks = mockTrucks.filter((x) => x.description.condition === "used");
-    console.log(usedTrucks);
   }
 
   return (
